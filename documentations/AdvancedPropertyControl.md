@@ -53,6 +53,31 @@ addPropertyControls(ResponsiveImage, {
 })
 ```
 
+## ControlType.Cursor
+`grabing`, `cursor`
+<img width="286" alt="Screenshot 2024-04-30 at 18 53 54" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/55d683f2-b8b1-4aaf-bcf2-2bd078a9f102">
+
+
+## ControlType.BoxShadow
+`0px 1px 2px 0px rgba(0,0,0,0.25)`
+<img width="275" alt="Screenshot 2024-04-30 at 18 54 05" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/6f9c8fbb-75e4-4d8b-9df4-9e16c2269cd2">
+
+## ControlType.Link
+`/contact`
+<img width="280" alt="Screenshot 2024-04-30 at 18 54 14" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/9ae4a4f1-4fe2-4a30-97ad-abcdfc915d38">
+
+
+
+## ControlType.Border
+<img width="276" alt="Screenshot 2024-04-30 at 18 54 21" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/7c94a13f-cab0-4ec3-b069-efb2c2538e0b">
+
+## ControlType.BorderRadius
+`0px 7px 0px 0px`
+<img width="250" alt="Screenshot 2024-04-30 at 18 54 55" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/aceba171-a5b5-4a1b-b184-e2d8287c3bfe">
+
+## ControlType.padding
+`0px 8px 0px 0px`
+<img width="249" alt="Screenshot 2024-04-30 at 18 55 03" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/2adbebf7-b02b-4ce6-a4dd-cb2c06e766a6">
 
 
 ## Icons in Property Controls
