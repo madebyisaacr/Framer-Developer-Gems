@@ -3,13 +3,22 @@
 
 There are more possibilities in terms of property controls than what the official documentation covers. See below extra gems for Property Controls:
 
-1. [Use the `ControlType.Font`](#controltypefont)
+1. [Extra PropertyControls](#extrapropertycontrols)
+a. ControlType.Font
+b. ControlType.ResponsiveImage
+c. ControlType.Cursor
+d. ControlType.BoxShadow
+e. ControlType.Link
+f. ControlType.Border
+g. ControlType.BorderRadius
+h. ControlType.padding
 2. [Use the `ControlType.ResponsiveImage`](#controltyperesponsiveimage)
 3. [Display Icons in the Property Controls](#icons-in-property-controls)
 4. [Get the Property Controls from a component](#get-the-property-controls-from-a-component)
 
 
-## ControlType.Font
+## All ControlType 
+### ControlType.Font
 The `ControlType.Font` allow you to use the Official Font Picker
 
 <img width="279" alt="Screenshot 2024-04-17 at 11 43 32" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/8aea73db-64dd-47ac-b00b-c9a8806d3ba6">
@@ -30,7 +39,7 @@ font: {
 ```
 
 
-## ControlType.ResponsiveImage
+### ControlType.ResponsiveImage
 The `ControlType.ResponsiveImage` allow you to use the [src](https://www.w3schools.com/tags/att_src.asp), [srcSet](https://www.w3schools.com/TAgs/att_source_srcset.asp), and [alt](https://www.w3schools.com/TAGS/att_alt.asp) HTML attributes from the `<image />` tag, and the `positionX` and `positionY` for the CSS attribute [object-position](https://css-tricks.com/almanac/properties/o/object-position/).
 
 <img width="275" alt="Screenshot 2024-04-17 at 11 42 39" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/86a21e7b-23d1-4c03-b9f0-76d7d6541a48">
@@ -53,29 +62,42 @@ addPropertyControls(ResponsiveImage, {
 })
 ```
 
-## ControlType.Cursor
-`grabing`, `cursor`
+### ControlType.Cursor
+
+The ControlType.Cursor adds a cursor panel to your property control, allowing the user to select a cursor from a predefined list. When using this control type, you will receive the corresponding CSS name of the selected cursor as a prop. (e.g.: `grabing`, `default`)
+
 <img width="286" alt="Screenshot 2024-04-30 at 18 53 54" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/55d683f2-b8b1-4aaf-bcf2-2bd078a9f102">
 
+```js
+export function CodeComponent({ cursor }) {
+    return <img style={cursor: cursor} />
+}
 
-## ControlType.BoxShadow
+addPropertyControls(CodeComponent, {
+    cursor: {
+        type: ControlType.Cursor,
+    },
+})
+```
+
+### ControlType.BoxShadow
 `0px 1px 2px 0px rgba(0,0,0,0.25)`
 <img width="275" alt="Screenshot 2024-04-30 at 18 54 05" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/6f9c8fbb-75e4-4d8b-9df4-9e16c2269cd2">
 
-## ControlType.Link
+### ControlType.Link
 `/contact`
 <img width="280" alt="Screenshot 2024-04-30 at 18 54 14" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/9ae4a4f1-4fe2-4a30-97ad-abcdfc915d38">
 
 
 
-## ControlType.Border
+### ControlType.Border
 <img width="276" alt="Screenshot 2024-04-30 at 18 54 21" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/7c94a13f-cab0-4ec3-b069-efb2c2538e0b">
 
-## ControlType.BorderRadius
+### ControlType.BorderRadius
 `0px 7px 0px 0px`
 <img width="250" alt="Screenshot 2024-04-30 at 18 54 55" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/aceba171-a5b5-4a1b-b184-e2d8287c3bfe">
 
-## ControlType.padding
+### ControlType.padding
 `0px 8px 0px 0px`
 <img width="249" alt="Screenshot 2024-04-30 at 18 55 03" src="https://github.com/VictorienDotNet/Framer-Developer-Gems/assets/5654077/2adbebf7-b02b-4ce6-a4dd-cb2c06e766a6">
 
