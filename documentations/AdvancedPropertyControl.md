@@ -4,15 +4,14 @@
 There are more possibilities in terms of property controls than what the official documentation covers. See below extra gems for Property Controls:
 
 1. [Extra PropertyControls](#extrapropertycontrols)
-a. ControlType.Font
-b. ControlType.ResponsiveImage
-c. ControlType.Cursor
-d. ControlType.BoxShadow
-e. ControlType.Link
-f. ControlType.Border
-g. ControlType.BorderRadius
-h. ControlType.padding
-2. [Use the `ControlType.ResponsiveImage`](#controltyperesponsiveimage)
+    - Font
+    - ResponsiveImage
+    - Cursor
+    - BoxShadow
+    - Link
+    - Border
+    - BorderRadius
+    - Padding
 3. [Display Icons in the Property Controls](#icons-in-property-controls)
 4. [Get the Property Controls from a component](#get-the-property-controls-from-a-component)
 
